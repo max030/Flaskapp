@@ -1,1 +1,1 @@
-web: gunicorn calm-fjord-45909:app
+web: gunicorn airbnb1:app
