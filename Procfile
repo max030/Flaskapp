@@ -1,1 +1,1 @@
-web: gunicorn calm-fjord-45909.wsgi --log-file -
+web: gunicorn calm-fjord-45909:app
