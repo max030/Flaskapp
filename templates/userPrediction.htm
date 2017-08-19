@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -100,7 +101,7 @@
 	  	</style>
 	</head>
 
-	<body>
+	<body backgroung=" /static/blue-landscape">
 	{%block body%}
 		<div class = "container-fluid">
 			<div class="col-sm-12">
@@ -113,7 +114,7 @@
 		        	<h1>Predict the Liking of your property</h1>
 		        </div>
 		        <div class = "col-sm-4">
-		        <a href ="user_home.htm">	<button type="button" class="btn btn-info" id="back_btn"><< Back</button></a>
+		        <a href ="/user_home">	<button type="button" class="btn btn-info" id="back_btn"><< Back</button></a>
 		        </div>
 	        </div>
 	        <div>
@@ -122,11 +123,7 @@
 	        			<th>
 	        				Country:
 	        			</th>
-	        			<th>
-	        				City:
-	        			</th>
 	        			
-	        		</tr>
 	        		<tr>
 	        			<td>
 	        				<select class = "select_section">
@@ -138,7 +135,7 @@
 	        				<select class = "select_section">
 								<option value="Boston">Boston</option>
 								<option value="Newyork">New York</option>
-								
+							
 							</select>
 	        			</td>
 	        			<tr>
@@ -173,19 +170,7 @@
 	        			</td>
 	        		</tr>
 	        		<tr>
-	        			<td>
-				        	<label class="checkbox-inline">
-				        	<input type="checkbox" name="pets_allowed" value="Bike">Pets Allowed<br></label>
-				        	<label class="checkbox-inline">
-				        	<input type="checkbox" name="tv" value="Bike">Pets Allowed<br></label>
-				        	<label class="checkbox-inline">
-				        	<input type="checkbox" name="kitchen" value="Bike">Pets Allowed<br></label>
-				        	<label class="checkbox-inline">
-				        	<input type="checkbox" name="wifi" value="Bike">Pets Allowed<br></label>
-				        	<label class="checkbox-inline">
-				        	<input type="checkbox" name="ac" value="Bike">Pets Allowed<br></label>
-
-							</td>
+	        		
 
 							</tr>
  
@@ -197,20 +182,15 @@
 	  	        </table>
 				
 				
-				
-				
-				
-	  	       <a href ="/prediction.html"> <input type="submit" class="btn btn-success" id="submit_btn" /></a>
-				<br/><br/>
-				
 				<div class="predictedPrice">
-					<a href ="/prediction.html"><b>Predicted Price:</b> </a><br/>
-					<input  type = "text" \>
+					<a href ="http://pricepredictionfinalterm.azurewebsites.net/"><b>Predicted Price:</b> </a><br/>
+					<a href ="http://pricepredictionfinalterm.azurewebsites.net/""> <input type="submit" class="btn btn-success" id="submit_btn" /></a>
+				<br/><br/>
 				</div>
 				
 				
 	    </div>
-		{%endblock}
+		{%endblock%}
 	</body>
 
 	<script>
